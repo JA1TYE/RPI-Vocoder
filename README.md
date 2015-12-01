@@ -3,6 +3,9 @@ An implementation of vocoder using baremetal Raspberry Pi
 Raspberry PiをBaremetal(OSなし)環境で使って作るチャネル・ヴォコーダ
 
 ##使い方
+このプロジェクトはオーディオ入力を必要とするので，Raspberry Piに対してコーデックを接続する必要があります．
+このプロジェクトではTLV320AIC23BをI2S経由で接続しています．接続方法についてはSchematics.pdfに簡単な回路図が書いてあります．実際にはマイクアンプ等を適宜追加する必要があります．
+
 通常のRaspberry Pi用のディスクイメージが書き込まれたSDカードに対して，"rpi-micom.img"を書き込み，  
 BOOTボリュームにある"config.txt"の最後に"kernel=rpi-micom.img"と書き足せば利用できるようになるはずです．  
 (詳細は[「BareMetalで遊ぶ Raspberry Pi」](http://tatsu-zine.com/books/raspi-bm)をご参照ください．)
