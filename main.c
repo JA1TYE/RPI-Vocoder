@@ -173,7 +173,8 @@ int main(void){
 	uint32_t i = 0;
 	uint32_t t = 0;
 	uint32_t l; 
-	int16_t car,mod;	
+	volatile int16_t car;
+	volatile int16_t mod;	
 	float res;
 	float i_scale;
 	int16_t res_i;
@@ -198,7 +199,7 @@ int main(void){
 		if(I2S_rxCanRead() > 0){
 			i = I2S_Read();
 			car = (i >> 16)& 0xffff; 
-			mod = i & 0xffff;		
+			mod = i & 0xffff;					
 		}
 		if(I2S_txCanWrite() > 0){
 			t += 768;
