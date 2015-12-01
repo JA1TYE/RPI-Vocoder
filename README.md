@@ -1,5 +1,5 @@
 # RPI-Vocoder
-An implementation of vocoder using baremetal Raspberry Pi
+An implementation of vocoder using baremetal Raspberry Pi  
 Raspberry PiをBaremetal(OSなし)環境で使って作るチャネル・ヴォコーダ
 
 ##ソースおよびライセンスについて
@@ -11,6 +11,5 @@ Raspberry PiをBaremetal(OSなし)環境で使って作るチャネル・ヴォ�
 元のサンプルコードはこちら：[jitomesky/RPi_Micon_C85book](https://github.com/jitomesky/RPi_Micon_C85book)
 
 ##作者情報
-RPI-Vocoder作者:[@JA1TYE](https://twitter.com/JA1TYE) / [TYE's Tech. Lab.](http://t-techlab.net/)
-
+RPI-Vocoder作者:[@JA1TYE](https://twitter.com/JA1TYE) / [TYE's Tech. Lab.](http://t-techlab.net/)  
 元ソース及び「BareMetalで遊ぶ Raspberry Pi」作者：[@tnishinaga](https://twitter.com/tnishinaga)様
