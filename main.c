@@ -204,7 +204,10 @@ int main(void){
 		if(I2S_txCanWrite() > 0){
 			t += 768;
 			res = vocoder((float)car*i_scale,(float)mod*i_scale);
-			res_i = (int16_t)(res * 16384.0);			
+			res = (res * 16384.0);
+			if(res > 32767.0)res_i = 32767;
+			else if(res < -32768.0)res_i = -32768;
+			else res_i = (int16_t)res;			
 			I2S_Write(res_i,res_i);
 		}		
 	}
